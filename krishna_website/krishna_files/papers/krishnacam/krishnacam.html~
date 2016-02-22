@@ -1,0 +1,180 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="StyleSheet" href="krishnacam_files/style.css" type="text/css" media="all"> 
+
+<title>KrishnaCam: Using a Longitudinal, Single-Person, Egocentric Dataset
+for Scene Understanding Tasks</title> 
+<style type="text/css">
+#primarycontent h1 {
+	font-variant: small-caps;
+}
+#primarycontent h3 {
+}
+#primarycontent teasertext {
+	text-align: center;
+}
+#primarycontent p {
+	text-align: center;
+}
+#primarycontent {
+	text-align: justify;
+}
+#primarycontent p {
+	text-align: justify;
+}
+#primarycontent p iframe {
+	text-align: center;
+}
+.featart {
+  margin:4px;
+}
+</style>
+<script src="krishnacam_files/analytics_002.js" async=""></script><script async="" src="krishnacam_files/analytics.js"></script><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32372780-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<script type="text/javascript">
+  function togglevis(elid){
+    el=document.getElementById(elid);
+    aelid=elid+"a";
+    ael=document.getElementById(aelid);
+    if(el.style.display=='none'){
+      el.style.display='inline-table';
+      ael.innerHTML="[Hide BibTex]";
+    }else{
+      el.style.display='none';
+      ael.innerHTML="[Show BibTex]";
+    }
+  }
+</script>
+</head> 
+<body itemscope="" itemtype="http://schema.org/ScholarlyArticle"> 
+<div id="primarycontent"> 
+<p class="hiddenDiv" itemprop="url"></p>
+<h1 itemprop="name" align="center"><strong>KrishnaCam: Using a Longitudinal, Single-Person, Egocentric Dataset
+for Scene Understanding Tasks</strong></h1>
+<h5 align="center"><img src="krishnacam_files/prediction.png" itemprop="image" alt="teaserImage" width="600"> <br/> Prediction of general behaviors that hold across different events and/or locations: (A-B) following a sidewalk
+(in both frequently visited and novel locations) (C) remaining stationary while eating food, (D-E) stopping at new
+intersections or when there is traffic.</h5>
+<p style="text-align:center;margin-bottom:-15px;font-size:1em;font-weight:bold;">Appears in <a href="http://www.wacv16.org/program/" target="_blank">WACV 2016</a></p>
+<h3>People</h3>
+
+<ul id="people" itemprop="accountablePerson">
+<li><a href="">Krishna Kumar Singh</a></li>
+<li><a href="http://www.cs.cmu.edu/~kayvonf/">Kayvon Fatahalian</a></li>
+<li><a href="http://www.eecs.berkeley.edu/~efros/">Alexei A. Efros</a></li>
+</ul>
+<h3>Abstract</h3>
+
+
+<p style="padding-left: 10px;	padding-right: 10px;">
+We record, and analyze, and present to the community,
+KrishnaCam, a large (7.6 million frames, 70 hours) egocen-
+tric video stream along with GPS position, acceleration and
+body orientation data spanning nine months of the life of a
+computer vision graduate student. We explore and exploit
+the inherent redundancies in this rich visual data stream to
+answer simple scene understanding questions such as: How
+much novel visual information does the student see each
+day? Given a single egocentric photograph of a scene, can
+we predict where the student might walk next? We find that
+given our large video database, simple, nearest-neighbor
+methods are surprisingly adept baselines for these tasks,
+even in scenes and scenarios where the camera wearer has
+never been before. For example, we demonstrate the ability
+to predict the near-future trajectory of the student in broad
+set of outdoor situations that includes following sidewalks,
+stopping to wait for a bus, taking a daily path to work, and
+the lack of movement while eating food.
+</p>
+
+
+<h3>Paper</h3>
+<table><tbody><tr>
+  <td>
+  </td>
+  <td valign="middle">
+    <p style="text-align:left;margin-top:5px;">
+    <span style="font-size:12px">
+    </span></p>
+    <p>
+    </p>
+
+<p style="margin-top:10px;">
+
+</p><p style="text-align:left;"><span style="font-size:4px;">&nbsp;<br></span> Krishna Kumar Singh, Kayvon Fatahalian, Alexei A. Efros <br><a href="krishnacam_files/kcam_wacv16.pdf"><b>KrishnaCam: Using a Longitudinal, Single-Person, Egocentric Dataset
+for Scene Understanding Tasks</b></a> <br>In <i>WACV 2016</i>
+   <a href="javascript:togglevis('krishna16')" id="showbib">[Show BibTex]</a><br>
+  </p></td>
+</tr></tbody></table>
+      <table class="bibtex" style="display:none;margin-top:20px;" id="krishna16"><tbody><tr><td>
+          <pre>@inproceedings{krishna-wacv2016,
+  title = {KrishnaCam: Using a Longitudinal, Single-Person, Egocentric Dataset
+for Scene Understanding Tasks},
+  author = {Krishna Kumar Singh, Kayvon Fatahalian, Alexei A. Efros},
+  booktitle = {IEEE Winter Conference on Applications of Computer Vision (WACV)},
+  year = {2016}
+}
+          </pre>
+       <!--</div>-->
+       </td></tr></tbody></table>
+<p></p>
+
+<!--<h3 style="clear:both">Video</h3><br/><br/>
+  <iframe width="800" height="450" src="http://www.youtube.com/embed/s5-30NKSwo8?version=3&fs=1&feature=player_embedded&fs=1&hd=1&ap=%2526fmt%3D22" frameborder="1" allowfullscreen></iframe>
+</p>-->
+
+
+<h3>Additional Materials</h3>
+<p style="padding-left: 10px;	padding-right: 10px;">
+
+</p><ul>
+<li><a href=""><b>Supplementary material</b></a></li>
+<li><a href=""><b>Demo video</b></a> Coming Soon!</li>
+<li><a href=""><b>Slides</b></a> Coming Soon!</li>
+<li><a href=""><b>Poster</b></a> Coming Soon!</li>
+</ul>
+
+
+<p></p>
+
+<h3>Dataset</h3>
+<p style="padding-left: 10px;	padding-right: 10px;">
+<b>Coming Soon!</b>
+</p>
+
+<h3>Interesting Results</h3>
+<p style="padding-left: 10px;	padding-right: 10px;">
+<h5 align="center"><img src="krishnacam_files/novel_graph.png" itemprop="image" width="500"> <br/> Due to the redundency in daily life, the rate novel frames
+are observed decreases with time. Days recording in new locations.</h5>
+<h5 align="center"><img src="krishnacam_files/webcam.png" itemprop="image" width="500"> <br/>Although the egocentric camera is not stationary, long-
+term recording captures changes in a scene over time. From top
+to bottom: changes in companion, movement of a bicycle stand,
+changes in parked cars, season, and lighting.</h5>
+<h5 align="center"><img src="krishnacam_files/people_density.png" itemprop="image" width="500"> <br/> Red regions indicate locations where (on average) more
+than four people are present in images. These locations are university hangouts areas, blocks with popular restaurants and movie
+theaters, and busy intersections.</h5>
+</p>
+
+
+<h3 style="clear:both">Acknowledgments</h3>
+<p style="padding-left: 10px; padding-right: 10px;">
+Support for this research was provided by the National
+Science Foundation (IIS-1422767), the Intel Corporation’s
+Egocentric Video ISRA, and by Google.
+</p>
+<p></p>
+<p style="padding-left: 10px; padding-right: 10px;">
+Comments, questions to <a href="mailto:krsingh@ucdavis.edu" target="_blank">Krishna Kumar Singh</a></p>
+</div>
+
+
+
+
+
+</body></html>
