@@ -56,7 +56,7 @@
 <div id="primarycontent"> 
 <p class="hiddenDiv" itemprop="url"></p>
 <h1 itemprop="name" align="center"><strong>Track and Transfer: Watching Videos to Simulate Strong Human Supervision for Weakly-Supervised Object Detection</strong></h1>
-<h5 align="center"><img src="track_transfer_files/track_transfer.png" itemprop="image" alt="teaserImage" width="600"> <br/><p align="justify"> Main idea: (top) Automatically tracked objects (yellow
+<h5 align="center"><img src="track_transfer_files/track_transfer.jpg" itemprop="image" alt="teaserImage" width="600"></h5> <p align="justify">Main idea: (top) Automatically tracked objects (yellow
 and blue boxes) in weakly-labeled videos without any human initialization.
 (bottom) Discriminative visual regions (green boxes)
 mined in weakly-labeled training images. For each discriminative
@@ -67,8 +67,8 @@ to train an object detector. Our approach improves object localization
 by expanding the initial visual region beyond a small object
 part (bottom-left) or removing the surrounding context (bottomright).
 In practice, we combine the retrieved boxes from multiple
-visual regions in an image to produce its best box.</p></h5>
-<p style="text-align:center;margin-bottom:-15px;font-size:1em;font-weight:bold;">Appears in <a href="http://cvpr2016.thecvf.com/" target="_blank">CVPR 2016</a></p>
+visual regions in an image to produce its best box.</p>
+<p style="text-align:center;margin-bottom:-15px;font-size:1em;font-weight:bold;">In <a href="http://cvpr2016.thecvf.com/" target="_blank">CVPR 2016</a></p>
 <h3>People</h3>
 
 <ul id="people" itemprop="accountablePerson">
@@ -118,7 +118,7 @@ PASCAL 2007 and 2010 datasets.
       <table class="bibtex" style="display:none;margin-top:20px;" id="krishna16"><tbody><tr><td>
           <pre>@inproceedings{krishna-cvpr2016,
   title = {Track and Transfer: Watching Videos to Simulate Strong Human Supervision for Weakly-Supervised Object Detection},
-  author = {Krishna Kumar Singh, Fanyi Xiao, Yong Jae Lee},
+  author = {Krishna Kumar Singh and Fanyi Xiao and Yong Jae Lee},
   booktitle = {IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
   year = {2016}
 }
@@ -143,11 +143,12 @@ PASCAL 2007 and 2010 datasets.
 
 <h3>Interesting Results</h3>
 <p style="padding-left: 10px;	padding-right: 10px;">
-<h5 align="center"><img src="track_transfer_files/qualitative_results.png" itemprop="image" width="800"> <br/> <p align="justify"> Qualitative results on the VOC 2007 train+val set. In each image pair, the first image shows a heatmap of the transferred video
+<img src="track_transfer_files/qualitative_results.jpg" itemprop="image" width="800" />
+<p align="justify"> Qualitative results on the VOC 2007 train+val set. In each image pair, the first image shows a heatmap of the transferred video
 object boxes and the second image shows the final selected pseudo ground-truth box. Our approach accurately discovers the spatial extent
 of the object-of-interest in most of the images. The last column shows mis-localized examples. Our approach can fail when there are
 multiple instances of the same object category in the image (e.g., aeroplane, dog, horse, train) or when the object’s appearance is very
-different from that found in videos (e.g., car). </p></h5>
+different from that found in videos (e.g., car). </p>
 </p>
 
 
