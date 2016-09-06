@@ -1,0 +1,162 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="StyleSheet" href="my_files/style.css" type="text/css" media="all"> 
+
+<title>End-to-End Localization and Ranking for Relative Attributes</title> 
+<style type="text/css">
+#primarycontent h1 {
+	font-variant: small-caps;
+}
+#primarycontent h3 {
+}
+#primarycontent teasertext {
+	text-align: center;
+}
+#primarycontent p {
+	text-align: center;
+}
+#primarycontent {
+	text-align: justify;
+}
+#primarycontent p {
+	text-align: justify;
+}
+#primarycontent p iframe {
+	text-align: center;
+}
+.featart {
+  margin:4px;
+}
+</style>
+
+
+<script type="text/javascript">
+  function togglevis(elid){
+    el=document.getElementById(elid);
+    aelid=elid+"a";
+    ael=document.getElementById(aelid);
+    if(el.style.display=='none'){
+      el.style.display='inline-table';
+      ael.innerHTML="[Hide BibTex]";
+    }else{
+      el.style.display='none';
+      ael.innerHTML="[Show BibTex]";
+    }
+  }
+</script>
+</head> 
+<body itemscope="" itemtype="http://schema.org/ScholarlyArticle"> 
+<div id="primarycontent"> 
+<p class="hiddenDiv" itemprop="url"></p>
+<h1 itemprop="name" align="center"><strong>End-to-End Localization and Ranking for Relative Attributes</strong></h1>
+<h5 align="center"><img src="my_files/relative_attribute.jpg" itemprop="image" alt="teaserImage" width="600"></h5> <p align="justify">
+Given pairwise relative attribute strength comparisons (i.e., greater/less than
+(left) or similar (right)), our goal is to automatically localize the most informative
+image regions corresponding to the visual attribute. For example, the mouth region
+is the most informative for the attribute smile. To this end, we train an end-to-end
+network that discovers the image regions and uses them for relative attribute ranking.
+</p>
+<p style="text-align:center;margin-bottom:-15px;font-size:1em;font-weight:bold;">In <a href="http://www.eccv2016.org/" target="_blank">ECCV 2016</a></p>
+<h3>People</h3>
+
+<ul id="people" itemprop="accountablePerson">
+<li><a href="http://krsingh.cs.ucdavis.edu">Krishna Kumar Singh</a></li>
+<li><a href="http://web.cs.ucdavis.edu/~yjlee/">Yong Jae Lee</a></li>
+</ul>
+<h3>Abstract</h3>
+
+
+<p style="padding-left: 10px;	padding-right: 10px;">
+We propose an end-to-end deep convolutional network to
+simultaneously localize and rank relative visual attributes, given only
+weakly-supervised pairwise image comparisons. Unlike previous methods,
+our network jointly learns the attribute’s features, localization, and
+ranker. The localization module of our network discovers the most informative
+image region for the attribute, which is then used by the ranking
+module to learn a ranking model of the attribute. Our end-to-end framework
+also significantly speeds up processing and is much faster than
+previous methods. We show state-of-the-art ranking results on various
+relative attribute datasets, and our qualitative localization results clearly
+demonstrate our network’s ability to learn meaningful image patches.
+</p>
+
+
+<h3>Paper</h3>
+<table><tbody><tr>
+  <td>
+  </td>
+  <td valign="middle">
+    <p style="text-align:left;margin-top:5px;">
+    <span style="font-size:12px">
+    </span></p>
+    <p>
+    </p>
+
+<p style="margin-top:10px;">
+
+</p><p style="text-align:left;"><span style="font-size:4px;">&nbsp;<br></span> Krishna Kumar Singh, Yong Jae Lee <br><a href="https://arxiv.org/abs/1608.02676"><b>End-to-End Localization and Ranking for Relative Attributes</b></a> <br>In <i>ECCV 2016</i>
+   <a href="javascript:togglevis('krishna16')" id="showbib">[Show BibTex]</a><br>
+  </p></td>
+</tr></tbody></table>
+      <table class="bibtex" style="display:none;margin-top:20px;" id="krishna16"><tbody><tr><td>
+          <pre>@inproceedings{krishna-eccv2016,
+  title = {End-to-End Localization and Ranking for Relative Attributes},
+  author = {Krishna Kumar Singh and Yong Jae Lee},
+  booktitle = {European Conference on Computer Vision (ECCV)},
+  year = {2016}
+}
+          </pre>
+       <!--</div>-->
+       </td></tr></tbody></table>
+<p></p>
+
+<!--<h3 style="clear:both">Video</h3><br/><br/>
+  <iframe width="800" height="450" src="http://www.youtube.com/embed/s5-30NKSwo8?version=3&fs=1&feature=player_embedded&fs=1&hd=1&ap=%2526fmt%3D22" frameborder="1" allowfullscreen></iframe>
+</p>-->
+
+
+<h3>Additional Materials</h3>
+<p style="padding-left: 10px;	padding-right: 10px;">
+
+</p><ul>
+<li><a href=""><b>Poster</b></a> Coming Soon!</li>
+<li><a href=""><b>Code</b></a> Coming Soon!</li>
+</ul>
+
+
+<h3>Interesting Results</h3>
+<p style="padding-left: 10px;	padding-right: 10px;">
+<img src="my_files/face_qualitative.jpg" itemprop="image" width="800" />
+<p align="justify"> Qualitative results on LFW-10 test images. Each row corresponds to an attribute,
+with the images uniformly sampled according to predicted attribute strength.
+In each image, the STN localization is depicted in the red box. It corresponds to
+meaningful regions for each localizable attribute (e.g., top of the head for bald-head
+and dark-hair; forehead for visible-forehead; mouth for mouth-open, smile
+and visible-teeth; eyes for eyes-open). For more global attributes like goodlooking,
+masculine-looking, and young, there is no definite answer, but our
+method tends to focus on larger areas that encompass the eyes, nose, and mouth.
+Finally, the ranking obtained by our method is accurate for all attributes.</p>
+</p>
+
+<p style="padding-left: 10px;	padding-right: 10px;">
+<img src="my_files/shoe_qualitative.jpg" itemprop="image" width="800" />
+<p align="justify"> Qualitative results on UT-Zap50K-1 test images. The STN localizes the relevant
+image regions: toe end for pointy, heel for comfort, top opening for open, and area
+around the laces for sporty. Our method’s ranking is also accurate for each attribute.</p>
+</p>
+
+<h3 style="clear:both">Acknowledgments</h3>
+<p style="padding-left: 10px; padding-right: 10px;">
+This work was supported in part by
+an Amazon Web Services Education Research Grant and
+GPUs donated by NVIDIA.
+</p>
+<p></p>
+<p style="padding-left: 10px; padding-right: 10px;">
+Comments, questions to <a href="mailto:krsingh@ucdavis.edu" target="_blank">Krishna Kumar Singh</a></p>
+</div>
+
+
+
+
+
+</body></html>
