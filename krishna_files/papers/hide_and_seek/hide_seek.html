@@ -1,0 +1,145 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="StyleSheet" href="my_files/style.css" type="text/css" media="all"> 
+
+<title>Hide-and-Seek: Forcing a Network to be Meticulous for Weakly-supervised Object and Action Localization</title> 
+<style type="text/css">
+#primarycontent h1 {
+	font-variant: small-caps;
+}
+#primarycontent h3 {
+}
+#primarycontent teasertext {
+	text-align: center;
+}
+#primarycontent p {
+	text-align: center;
+}
+#primarycontent {
+	text-align: justify;
+}
+#primarycontent p {
+	text-align: justify;
+}
+#primarycontent p iframe {
+	text-align: center;
+}
+.featart {
+  margin:4px;
+}
+</style>
+
+
+<script type="text/javascript">
+  function togglevis(elid){
+    el=document.getElementById(elid);
+    aelid=elid+"a";
+    ael=document.getElementById(aelid);
+    if(el.style.display=='none'){
+      el.style.display='inline-table';
+      ael.innerHTML="[Hide BibTex]";
+    }else{
+      el.style.display='none';
+      ael.innerHTML="[Show BibTex]";
+    }
+  }
+</script>
+</head> 
+<body itemscope="" itemtype="http://schema.org/ScholarlyArticle"> 
+<div id="primarycontent"> 
+<p class="hiddenDiv" itemprop="url"></p>
+<h1 itemprop="name" align="center"><strong>Hide-and-Seek: Forcing a Network to be Meticulous for Weakly-supervised Object and Action Localization</strong></h1>
+<h5 align="center"><img src="my_files/hide_seek_teaser.png" itemprop="image" alt="teaserImage" width="600"></h5> <p align="justify">
+<b>Main idea.</b> (Top row) A network tends to focus on the
+most discriminative parts of an image (e.g., face of the dog) for
+classification. (Bottom row) By hiding images patches randomly,
+we can force the network to focus on other relevant object parts in
+order to correctly classify the image as ’dog’.
+</p>
+<p style="text-align:center;margin-bottom:-15px;font-size:1em;font-weight:bold;">In <a href="http://iccv2017.thecvf.com/" target="_blank">ICCV 2017</a></p>
+<h3>People</h3>
+
+<ul id="people" itemprop="accountablePerson">
+<li><a href="http://krsingh.cs.ucdavis.edu">Krishna Kumar Singh</a></li>
+<li><a href="http://web.cs.ucdavis.edu/~yjlee/">Yong Jae Lee</a></li>
+</ul>
+<h3>Abstract</h3>
+
+
+<p style="padding-left: 10px;	padding-right: 10px;">
+We propose `Hide-and-Seek', a weakly-supervised framework that aims to improve object localization in images and action localization in videos. Most existing weakly-supervised methods localize only the most discriminative parts of an object rather than all relevant parts, which leads to suboptimal performance. Our key idea is to hide patches in a training image randomly, forcing the network to seek other relevant parts when the most discriminative part is hidden. Our approach only needs to modify the input image and can work with any network designed for object localization. During testing, we do not need to hide any patches. Our Hide-and-Seek approach obtains superior performance compared to previous methods for weakly-supervised object localization on the ILSVRC dataset. We also demonstrate that our framework can be easily extended to weakly-supervised action localization.
+</p>
+
+
+<h3>Paper</h3>
+<table><tbody><tr>
+  <td>
+  </td>
+  <td valign="middle">
+    <p style="text-align:left;margin-top:5px;">
+    <span style="font-size:12px">
+    </span></p>
+    <p>
+    </p>
+
+<p style="margin-top:10px;">
+
+</p><p style="text-align:left;"><span style="font-size:4px;">&nbsp;<br></span> Krishna Kumar Singh, Yong Jae Lee <br><a href="my_files/iccv2017.pdf"><b>Hide-and-Seek: Forcing a Network to be Meticulous for Weakly-supervised Object and Action Localization</b></a> <br>In <i>ICCV 2017</i>
+   <a href="javascript:togglevis('krishna16')" id="showbib">[Show BibTex]</a><br>
+  </p></td>
+</tr></tbody></table>
+      <table class="bibtex" style="display:none;margin-top:20px;" id="krishna16"><tbody><tr><td>
+          <pre>@inproceedings{singh-iccv2017,
+  title = {Hide-and-Seek: Forcing a Network to be Meticulous for Weakly-supervised Object and Action Localization},
+  author = {Krishna Kumar Singh and Yong Jae Lee},
+  booktitle = {International Conference on Computer Vision (ICCV)},
+  year = {2017}
+}
+          </pre>
+       <!--</div>-->
+       </td></tr></tbody></table>
+<p></p>
+
+<!--<h3 style="clear:both">Video</h3><br/><br/>
+  <iframe width="800" height="450" src="http://www.youtube.com/embed/s5-30NKSwo8?version=3&fs=1&feature=player_embedded&fs=1&hd=1&ap=%2526fmt%3D22" frameborder="1" allowfullscreen></iframe>
+</p>-->
+
+
+<h3>Additional Materials</h3>
+<p style="padding-left: 10px;	padding-right: 10px;">
+
+</p><ul>
+<li><a href="my_files/ICCV_poster.pdf"><b>Poster</b></a></li>
+<li><a href="#"><b>Code/Models</b></a>(Coming Soon!)</li>
+</ul>
+
+
+<h3>Interesting Results</h3>
+<p style="padding-left: 10px;	padding-right: 10px;">
+<img src="my_files/qualitative.png" itemprop="image" width="800" />
+<p align="justify"> 
+We compare our approach with AlexNet-GAP [59] on the ILVRC validation data. For
+each image, we show the bounding box and CAM obtained by AlexNet-GAP (left) and our method (right). Our Hide-and-Seek approach
+localizes multiple relevant parts of an object whereas AlexNet-GAP mainly focuses only on the most discriminative part. For example, in
+the first, second and fifth rows, our method localizes the full body of the animals while AlexNet-GAP only focuses on the face. Similarly,
+our method can capture the tail of the squirrels and snakes in the third and last rows, which are missed by AlexNet-GAP. We can even
+localize the wings of an insect, and front part of the gun in the second and third last rows, respectively.
+</p>
+</p>
+
+
+<h3 style="clear:both">Acknowledgments</h3>
+<p style="padding-left: 10px; padding-right: 10px;">
+This work was supported in part by
+Intel Corp, Amazon Web Services Cloud Credits for Research,
+and GPUs donated by NVIDIA.
+</p>
+<p></p>
+<p style="padding-left: 10px; padding-right: 10px;">
+Comments, questions to <a href="mailto:krsingh@ucdavis.edu" target="_blank">Krishna Kumar Singh</a></p>
+</div>
+
+
+
+
+
+</body></html>
