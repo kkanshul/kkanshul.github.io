@@ -1,0 +1,158 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="StyleSheet" href="my_files/style.css" type="text/css" media="all"> 
+
+<title>Transferring Common-Sense Knowledge for Object Detection</title> 
+<style type="text/css">
+#primarycontent h1 {
+	font-variant: small-caps;
+}
+#primarycontent h3 {
+}
+#primarycontent teasertext {
+	text-align: center;
+}
+#primarycontent p {
+	text-align: center;
+}
+#primarycontent {
+	text-align: justify;
+}
+#primarycontent p {
+	text-align: justify;
+}
+#primarycontent p iframe {
+	text-align: center;
+}
+.featart {
+  margin:4px;
+}
+</style>
+
+
+<script type="text/javascript">
+  function togglevis(elid){
+    el=document.getElementById(elid);
+    aelid=elid+"a";
+    ael=document.getElementById(aelid);
+    if(el.style.display=='none'){
+      el.style.display='inline-table';
+      ael.innerHTML="[Hide BibTex]";
+    }else{
+      el.style.display='none';
+      ael.innerHTML="[Show BibTex]";
+    }
+  }
+</script>
+</head> 
+<body itemscope="" itemtype="http://schema.org/ScholarlyArticle"> 
+<div id="primarycontent"> 
+<p class="hiddenDiv" itemprop="url"></p>
+<h1 itemprop="name" align="center"><strong>Transferring Common-Sense Knowledge for Object Detection</strong></h1>
+<h5 align="center"><img src="my_files/cs_teaser.png" itemprop="image" alt="teaserImage" width="400"></h5> <p align="justify">
+Using the multiple common-sense cues, can you guess the semantic category of the object corresponding to the orange box? (answer: Toothbrush).
+</p>
+<p style="text-align:center;margin-bottom:-15px;font-size:1em;font-weight:bold;">In <a href="http://iccv2017.thecvf.com/" target="_blank">ICCV 2017</a></p>
+<h3>People</h3>
+
+<ul id="people" itemprop="accountablePerson">
+<li><a href="http://krsingh.cs.ucdavis.edu">Krishna Kumar Singh</a></li>
+<li><a href="https://allenai.org/team/santoshd/">Santosh Divvala</a></li>
+<li><a href="https://homes.cs.washington.edu/~ali/">Ali Farhadi</a></li>
+<li><a href="http://web.cs.ucdavis.edu/~yjlee/">Yong Jae Lee</a></li>
+</ul>
+<h3>Abstract</h3>
+
+
+<p style="padding-left: 10px;	padding-right: 10px;">
+We propose the idea of transferring common-sense knowledge from source categories to target categories for scalable object detection. In our setting, the training data for the source categories have bounding box annotations, while those for the target categories only have image-level annotations.  Current state-of-the-art approaches focus on image-level visual or semantic similarity to adapt a detector trained on the source categories to the new target categories.  In contrast, our key idea is to (i) use similarity not at image-level, but rather at region-level, as well as (ii) leverage richer common-sense (based on attribute, spatial, etc.,) to guide the algorithm towards learning the correct detections. We acquire such common-sense cues automatically from readily-available knowledge bases without any extra human effort. On the challenging MS COCO dataset, we find that common-sense knowledge can substantially improves detection performance over existing transfer-learning baselines.
+</p>
+
+
+<h3>Paper</h3>
+<table><tbody><tr>
+  <td>
+  </td>
+  <td valign="middle">
+    <p style="text-align:left;margin-top:5px;">
+    <span style="font-size:12px">
+    </span></p>
+    <p>
+    </p>
+
+<p style="margin-top:10px;">
+
+</p><p style="text-align:left;"><span style="font-size:4px;">&nbsp;<br></span> Krishna Kumar Singh, Santosh Divvala, Ali Farhadi, Yong Jae Lee <br><a href="https://arxiv.org/abs/1804.01077"><b>Transferring Common-Sense Knowledge for Object Detection</b></a> <br>In <i>ECCV 2087</i>
+   <a href="javascript:togglevis('krishna16')" id="showbib">[Show BibTex]</a><br>
+  </p></td>
+</tr></tbody></table>
+      <table class="bibtex" style="display:none;margin-top:20px;" id="krishna16"><tbody><tr><td>
+          <pre>@inproceedings{singh-eccv2018,
+  title = {Transferring Common-Sense Knowledge for Object Detection},
+  author = {Krishna Kumar Singh and Yong Jae Lee},
+  booktitle = {European Conference on Computer Vision (ECCV)},
+  year = {2018}
+}
+          </pre>
+       <!--</div>-->
+       </td></tr></tbody></table>
+<p></p>
+
+<!--<h3 style="clear:both">Video</h3><br/><br/>
+  <iframe width="800" height="450" src="http://www.youtube.com/embed/s5-30NKSwo8?version=3&fs=1&feature=player_embedded&fs=1&hd=1&ap=%2526fmt%3D22" frameborder="1" allowfullscreen></iframe>
+</p>-->
+
+
+<h3>Additional Materials</h3>
+<p style="padding-left: 10px;	padding-right: 10px;">
+
+</p><ul>
+<li><a href="#"><b>Poster (Coming Soon!)</b></a></li>
+<li><a href="#"><b>Code/Models (Coming Soon!)</b></a></li>
+</ul>
+
+
+<h3>Approach</h3>
+<p style="padding-left: 10px;	padding-right: 10px;">
+<img src="my_files/cs_approach.png" itemprop="image" width="800" />
+<p align="justify"> 
+Proposed framework for transferring common-sense knowledge for object detection. The base detection network computes a classification matrix X<sub>P X C</sub> without any bounding box annotations. We introduce a common-sense matrix Y<sub>P X C</sub> that modulates the probabilities of region proposals belonging to various classes based on common-sense knowledge. The common-sense matrix is computed using readily-available knowledge base resources.
+</p>
+</p>
+
+
+
+
+<h3>Interesting Results</h3>
+<p style="padding-left: 10px;	padding-right: 10px;">
+<img src="my_files/cs_qual.png" itemprop="image" width="800" />
+<p align="justify"> 
+Qualitative detection results on MS COCO (Ours: green boxes; Base network: red; LSDA+Semantic: Yellow):  Observe that our proposed approach produces better detections than the base network for all three common-sense. While LSDA+Semantic performs equally well as ours on a few classes (e.g., giraffe, tie), in general its performance is lower. For 'giraffe' and 'elephant', by using similarity common-sense (i.e., being similar to other animal categories in C<sub>source</sub>), our approach detects the full body extent rather than localizing some discriminative body parts. By using attribute common-sense, e.g., 'clock' being round, 'spoon' being metallic, and 'microwave' being  white/black, we get better detections. Spatial common-sense helps remove the co-occurring regions (water for `surfboard', person for `frisbee').
+</p>
+</p>
+
+<h3>Failure Cases</h3>
+<p style="padding-left: 10px;	padding-right: 10px;">
+<img src="my_files/cs_qual_fail.png" itemprop="image" width="700" />
+<p align="justify"> 
+Example failures: Our approach fails when the object-of-interest is hardly-visible ('handbag') or when source objects with similar attribute (metallic) are cluttered together ('spoon'). For 'wine glass', we falsely detect the bottle because during training we provided the common-sense that wine-glass is semantically similar to a bottle.
+</p>
+</p>
+
+
+<h3 style="clear:both">Acknowledgments</h3>
+<p style="padding-left: 10px; padding-right: 10px;">
+This work is in part supported by ONR N00014-13-1-0720, NSF
+IIS-1338054, NSF IIS-1748387, NSF-1652052, NRI-1637479, ARO YIP W911NF-17-1-0410, Allen Distinguished
+Investigator Award, Allen Institute for Artificial
+Intelligence, Microsoft Azure Research Award and the GPUs donated by NVIDIA. This work was done when Krishna Kumar Singh was intern at Allen Institute for AI.
+</p>
+<p></p>
+<p style="padding-left: 10px; padding-right: 10px;">
+Comments, questions to <a href="mailto:krsingh@ucdavis.edu" target="_blank">Krishna Kumar Singh</a></p>
+</div>
+
+
+
+
+
+</body></html>
