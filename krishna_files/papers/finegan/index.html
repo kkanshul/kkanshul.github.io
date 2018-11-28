@@ -1,0 +1,175 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="StyleSheet" href="my_files/style.css" type="text/css" media="all"> 
+
+<title>FineGAN: Unsupervised Hierarchical Disentanglement for Fine-Grained Object Generation and Discovery</title> 
+<style type="text/css">
+#primarycontent h1 {
+	font-variant: small-caps;
+}
+#primarycontent h3 {
+}
+#primarycontent teasertext {
+	text-align: center;
+}
+#primarycontent p {
+	text-align: center;
+}
+#primarycontent {
+	text-align: justify;
+}
+#primarycontent p {
+	text-align: justify;
+}
+#primarycontent p iframe {
+	text-align: center;
+}
+.featart {
+  margin:4px;
+}
+</style>
+
+
+<script type="text/javascript">
+  function togglevis(elid){
+    el=document.getElementById(elid);
+    aelid=elid+"a";
+    ael=document.getElementById(aelid);
+    if(el.style.display=='none'){
+      el.style.display='inline-table';
+      ael.innerHTML="[Hide BibTex]";
+    }else{
+      el.style.display='none';
+      ael.innerHTML="[Show BibTex]";
+    }
+  }
+</script>
+</head> 
+<body itemscope="" itemtype="http://schema.org/ScholarlyArticle"> 
+<div id="primarycontent"> 
+<p class="hiddenDiv" itemprop="url"></p>
+<h1 itemprop="name" align="center"><strong>FineGAN: Unsupervised Hierarchical Disentanglement for Fine-Grained Object Generation and Discovery</strong></h1>
+<h5 align="center"><img src="my_files/teaser.png" itemprop="image" alt="teaserImage" width="600"></h5> 
+<p style="padding-left: 10px;	padding-right: 10px;">
+FineGAN disentangles the background, object shape (parent), and object appearance (child) to hierarchically generate fine-grained objects, without any fine-grained annotations.
+</p>
+<h3>People</h3>
+
+<ul id="people" itemprop="accountablePerson">
+<li><a href="http://krsingh.cs.ucdavis.edu">Krishna Kumar Singh</a></li>
+<li><a href="https://utkarshojha.github.io/">Utkarsh Ojha</a></li>
+<li><a href="http://web.cs.ucdavis.edu/~yjlee/">Yong Jae Lee</a></li>
+</ul>
+<h3>Abstract</h3>
+
+
+<p style="padding-left: 10px;	padding-right: 10px;">
+We propose FineGAN, a novel unsupervised GAN framework, which disentangles the background, object shape, and object appearance to hierarchically generate images of fine-grained object categories. To disentangle the factors without any supervision, our key idea is to use information theory to associate each factor to a latent code, and to condition the relationships between the codes in a specific way to induce the desired hierarchy. Through extensive experiments, we show that FineGAN achieves the desired disentanglement to generate realistic and diverse images belonging to fine-grained classes of birds, dogs, and cars. Using FineGAN's automatically learned features, we also cluster real images as a first attempt at solving the novel problem of unsupervised fine-grained object category discovery.
+</p>
+
+
+<h3>Paper</h3>
+<table><tbody><tr>
+  <td>
+  </td>
+  <td valign="middle">
+    <p style="text-align:left;margin-top:5px;">
+    <span style="font-size:12px">
+    </span></p>
+    <p>
+    </p>
+
+<p style="margin-top:10px;">
+
+</p><p style="text-align:left;"><span style="font-size:4px;">&nbsp;<br></span> Krishna Kumar Singh*, Utkarsh Ojha*, Yong Jae Lee <br><a href="FineGAN: Unsupervised Hierarchical Disentanglement for Fine-Grained Object Generation and Discovery"><b>FineGAN: Unsupervised Hierarchical Disentanglement for Fine-Grained Object Generation and Discovery</b></a> <br> (* denotes equal contribution) In <i>Arxiv 2018</i>
+   <a href="javascript:togglevis('krishna16')" id="showbib">[Show BibTex]</a><br>
+  </p></td>
+</tr></tbody></table>
+      <table class="bibtex" style="display:none;margin-top:20px;" id="krishna16"><tbody><tr><td>
+          <pre>@inproceedings{singh-arxiv2018,
+  title = {FineGAN: Unsupervised Hierarchical Disentanglement for Fine-Grained Object Generation and Discovery},
+  author = {Krishna Kumar Singh, Utkarsh Ojha, and Yong Jae Lee},
+  booktitle = {Arxiv},
+  year = {2018}
+}
+          </pre>
+       <!--</div>-->
+       </td></tr></tbody></table>
+<p></p>
+
+
+<!--<h3 style="clear:both">Video</h3><br/><br/>
+  <iframe width="800" height="450" src="http://www.youtube.com/embed/s5-30NKSwo8?version=3&fs=1&feature=player_embedded&fs=1&hd=1&ap=%2526fmt%3D22" frameborder="1" allowfullscreen></iframe>
+</p>-->
+
+
+<h3>Additional Materials</h3>
+<p style="padding-left: 10px;	padding-right: 10px;">
+
+</p><ul>
+<li><a href="https://github.com/kkanshul/finegan"><b>Code/Models</b></a></li>
+</ul>
+
+
+<h3>Approach</h3>
+<p style="padding-left: 10px;	padding-right: 10px;">
+<center>
+<img src="my_files/approach.png" itemprop="image" width="800" align="center" />
+</center>
+<p align="justify"> 
+FineGAN architecture for hierarchical fine-grained image generation. The background stage, conditioned on random vector z and background code b, generates the background image B. The parent stage, conditioned on z and parent code p, uses B as a canvas to generate parent image P, which captures the shape of the object. The child stage, conditioned on c, uses P as a canvas to generate the final child image C with the object's appearance details stitched into the shape outline.
+</p>
+</p>
+<h3> Demo video </h3>
+<p>
+  <iframe width="800" height="450" src="https://www.youtube.com/embed/tkk0SeWGu-8" frameborder="0" allowfullscreen></iframe>
+</p>
+<br/>
+
+<h3>Qualitative Results</h3>
+<p style="padding-left: 10px;	padding-right: 10px;">
+<center>
+<img src="my_files/qual_res1.png" itemprop="image" width="800" />
+</center>
+<p align="justify"> 
+FineGAN's stagewise image generation. Background stage generates a background which is retained over the child and parent stages. Parent stage generates a hollow image with only the object's shape, and child stage fills in the appearance to complete the image.
+</p>
+<br/>
+<br/>
+</p>
+<p style="padding-left: 10px;	padding-right: 10px;">
+<center>
+<img src="my_files/qual_res2.png" itemprop="image" width="800" />
+</center>
+<p align="justify"> 
+Varying p vs. c vs. z. Every three rows correspond to the same parent code p and each row has a different child code c. For the same parent, the object's shape remains consistent while the appearance changes with different child codes. For the same child, the appearance remains consistent. Each column has the same random vector z -- we see that it controls the object's pose and position.
+</p>
+</p>
+<br/>
+<br/>
+<p style="padding-left: 10px;	padding-right: 10px;">
+<center>
+<img src="my_files/qual_res3.png" itemprop="image" width="600" />
+</center>
+<p align="justify"> 
+Disentanglement of parent vs. child codes. Shape is retained over the column, appearance is retained over the row. Note that we keep background code b to be same across each column.
+</p>
+</p>
+
+
+
+
+
+<h3 style="clear:both">Acknowledgments</h3>
+<p align="justify">
+This work was supported in part by NSF CAREER IIS-1751206, IIS-1748387, AWS ML Research Award, Google Cloud Platform research credits program, and GPUs donated by NVIDIA.
+</p>
+<p></p>
+<p align="justify">
+Comments, questions to <a href="mailto:krsingh@ucdavis.edu" target="_blank">Krishna Kumar Singh</a></p>
+</div>
+
+
+
+
+
+</body></html>
