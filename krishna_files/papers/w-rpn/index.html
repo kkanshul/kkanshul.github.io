@@ -1,0 +1,199 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="StyleSheet" href="my_files/style.css" type="text/css" media="all"> 
+
+<title>You reap what you sow: Using Videos to Generate High Precision Object Proposals for Weakly-supervised Object Detection</title> 
+<style type="text/css">
+#primarycontent h1 {
+	font-variant: small-caps;
+}
+#primarycontent h3 {
+}
+#primarycontent teasertext {
+	text-align: center;
+}
+#primarycontent p {
+	text-align: center;
+}
+#primarycontent {
+	text-align: justify;
+}
+#primarycontent p {
+	text-align: justify;
+}
+#primarycontent p iframe {
+	text-align: center;
+}
+.featart {
+  margin:4px;
+}
+</style>
+
+
+<script type="text/javascript">
+  function togglevis(elid){
+    el=document.getElementById(elid);
+    aelid=elid+"a";
+    ael=document.getElementById(aelid);
+    if(el.style.display=='none'){
+      el.style.display='inline-table';
+      ael.innerHTML="[Hide BibTex]";
+    }else{
+      el.style.display='none';
+      ael.innerHTML="[Show BibTex]";
+    }
+  }
+</script>
+</head> 
+<body itemscope="" itemtype="http://schema.org/ScholarlyArticle"> 
+<div id="primarycontent"> 
+<p class="hiddenDiv" itemprop="url"></p>
+<h1 itemprop="name" align="center"><strong>You reap what you sow: Using Videos to Generate High Precision Object Proposals for Weakly-supervised Object Detection</strong></h1>
+<h5 align="center"><img src="my_files/w-rpn_tease.png" itemprop="image" alt="teaserImage" width="600"></h5> 
+<p style="padding-left: 10px;	padding-right: 10px;">
+ Given a weakly-labeled image (a), standard weaklysupervised
+object detection methods start by generating hundreds
+to thousands of object proposals (b). The ensuing object localizer
+must then perform the extremely difficult task of mining the one or
+two relevant object regions out of all the noisy proposals. We instead
+generate a few high-precision proposals (c), using a weaklysupervised
+region proposal network (W-RPN) trained without any
+bounding box annotations.
+</p>
+<h3>People</h3>
+
+<ul id="people" itemprop="accountablePerson">
+<li><a href="http://krsingh.cs.ucdavis.edu">Krishna Kumar Singh</a></li>
+<li><a href="http://web.cs.ucdavis.edu/~yjlee/">Yong Jae Lee</a></li>
+</ul>
+<h3>Abstract</h3>
+
+
+<p style="padding-left: 10px;	padding-right: 10px;">
+We propose a novel way of using videos to obtain high
+precision object proposals for weakly-supervised object detection.
+Existing weakly-supervised detection approaches
+use off-the-shelf proposal methods like edge boxes or selective
+search to obtain candidate boxes. These methods provide
+high recall but at the expense of thousands of noisy proposals.
+Thus, the entire burden of finding the few relevant
+object regions is left to the ensuing object mining step. To
+mitigate this issue, we focus instead on improving the precision
+of the initial candidate object proposals. Since we cannot
+rely on localization annotations, we turn to video and
+leverage motion cues to automatically estimate the extent of
+objects to train a Weakly-supervised Region Proposal Network
+(W-RPN). We use the W-RPN to generate high precision
+object proposals, which are in turn used to re-rank high
+recall proposals like edge boxes or selective search according
+to their spatial overlap. Our W-RPN proposals lead to
+significant improvement in performance for state-of-the-art
+weakly-supervised object detection approaches on PASCAL
+VOC 2007 and 2012.
+</p>
+
+
+<h3>Paper</h3>
+<table><tbody><tr>
+  <td>
+  </td>
+  <td valign="middle">
+    <p style="text-align:left;margin-top:5px;">
+    <span style="font-size:12px">
+    </span></p>
+    <p>
+    </p>
+
+<p style="margin-top:10px;">
+
+</p><p style="text-align:left;"><span style="font-size:4px;">&nbsp;<br></span> Krishna Kumar Singh, Yong Jae Lee <br><a href="http://krsingh.cs.ucdavis.edu/krishna_files/papers/w-rpn/w-rpn.pdf"><b>You reap what you sow: Using Videos to Generate High Precision Object Proposals for Weakly-supervised Object Detection</b></a> <br> In <i>CVPR 2019</i> 
+   <a href="javascript:togglevis('krishna16')" id="showbib">[Show BibTex]</a><br>
+  </p></td>
+</tr></tbody></table>
+      <table class="bibtex" style="display:none;margin-top:20px;" id="krishna16"><tbody><tr><td>
+          <pre>@inproceedings{singh-cvpr2019,
+  title = {You reap what you sow: Using Videos to Generate High Precision Object Proposals for Weakly-supervised Object Detection},
+  author = {Krishna Kumar Singh and Yong Jae Lee},
+  booktitle = {CVPR},
+  year = {2019}
+}
+          </pre>
+       <!--</div>-->
+       </td></tr></tbody></table>
+<p></p>
+
+
+<!--<h3 style="clear:both">Video</h3><br/><br/>
+  <iframe width="800" height="450" src="http://www.youtube.com/embed/s5-30NKSwo8?version=3&fs=1&feature=player_embedded&fs=1&hd=1&ap=%2526fmt%3D22" frameborder="1" allowfullscreen></iframe>
+</p>-->
+
+
+<h3>Additional Materials</h3>
+<p style="padding-left: 10px;	padding-right: 10px;">
+
+</p><ul>
+<li><a href="https://github.com/kkanshul/w-rpn"><b>Code/Models</b></a></li>
+</ul>
+
+
+<h3>Approach</h3>
+<p style="padding-left: 10px;	padding-right: 10px;">
+<center>
+<img src="my_files/w-rpn_approach.png" itemprop="image" width="800" align="center" />
+</center>
+<p align="justify"> 
+ (a) Framework for training a weakly-supervised region proposal network (W-RPN) using videos. Given frames from a video
+(Vm), we first compute segments using motion cues, and then rescore them according to an automatic measure of segment quality. High
+scoring motion segments are used to compute pseudo ground-truth boxes to train the W-RPN. (b) Once trained, the W-RPN can be used
+to generate high precision proposals (O) for an input weakly-labeled image (In). These high precision proposals are used to rank the high
+recall proposals of edge boxes or selective search (R) according to their spatial overlap during the training of a weakly-supervised object
+detector.
+</p>
+
+<h3>Qualitative Results</h3>
+ 
+<p style="padding-left: 10px;	padding-right: 10px;">
+<center>
+<img src="my_files/w-rpn_qual1.png" itemprop="image" width="600" />
+</center>
+<p align="justify"> 
+Visualization of our and edge boxes top-10 proposals.
+Red boxes denote the proposal. Out proposals (d) localize the object
+tightly more often than the highest scoring edge box proposals
+(c). Our proposals are used to rank the edge boxes proposals (b).
+</p>
+</p>
+<br/>
+<br/>
+<p style="padding-left: 10px;	padding-right: 10px;">
+<center>
+<img src="my_files/w-rpn_qual2.png" itemprop="image" width="800" />
+</center>
+<p align="justify"> 
+Detection results of WSDDN with (green box) and without (red box) our proposals. Our proposals often lead to better detections
+as the network learns to detect the whole object rather than focusing only on a discriminative part or co-occurring context. In these
+examples, by using our proposals, WSDDN is able to detect the full extent of cat, dog, and person whereas it only focuses on their faces
+without our proposals.
+</p>
+</p>
+
+
+
+
+
+<h3 style="clear:both">Acknowledgments</h3>
+<p align="justify">
+This work was supported in part by
+NSF CAREER IIS-1751206, IIS-1748387, AWS ML Research
+Award, Google Cloud Platform research credits program,
+and GPUs donated by NVIDIA.
+</p>
+<p></p>
+<p align="justify">
+Comments, questions to <a href="mailto:krsingh@ucdavis.edu" target="_blank">Krishna Kumar Singh</a></p>
+</div>
+
+
+
+
+
+</body></html>
