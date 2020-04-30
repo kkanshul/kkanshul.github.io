@@ -1,0 +1,197 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="StyleSheet" href="my_files/style.css" type="text/css" media="all"> 
+
+<title>Don’t Judge an Object by Its Context: Learning to Overcome Contextual Bias</title> 
+<style type="text/css">
+#primarycontent h1 {
+	font-variant: small-caps;
+}
+#primarycontent h3 {
+}
+#primarycontent teasertext {
+	text-align: center;
+}
+#primarycontent p {
+	text-align: center;
+}
+#primarycontent {
+	text-align: justify;
+}
+#primarycontent p {
+	text-align: justify;
+}
+#primarycontent p iframe {
+	text-align: center;
+}
+.featart {
+  margin:4px;
+}
+</style>
+
+
+<script type="text/javascript">
+  function togglevis(elid){
+    el=document.getElementById(elid);
+    aelid=elid+"a";
+    ael=document.getElementById(aelid);
+    if(el.style.display=='none'){
+      el.style.display='inline-table';
+      ael.innerHTML="[Hide BibTex]";
+    }else{
+      el.style.display='none';
+      ael.innerHTML="[Show BibTex]";
+    }
+  }
+</script>
+</head> 
+<body itemscope="" itemtype="http://schema.org/ScholarlyArticle"> 
+<div id="primarycontent"> 
+<p class="hiddenDiv" itemprop="url"></p>
+<h1 itemprop="name" align="center"><strong>Don’t Judge an Object by Its Context: Learning to Overcome Contextual Bias</strong></h1>
+<h5 align="center"><img src="my_files/teaser.png" itemprop="image" alt="teaserImage" width="600"></h5> 
+<p style="padding-left: 10px;	padding-right: 10px;">
+<b>Top:</b> Sample training images of the category “skateboard”. Notice how it very often co-occurs with “person” and how all images are captured from similar viewpoints. In the rare cases where skateboard occurs
+exclusively, there is higher viewpoint variance. <b>Bottom:</b> Such data skew
+causes a typical classifier to rely on “person” to classify “skateboard” and
+worse, unable to recognize skateboard when person is absent. Our proposed approach overcomes such context bias by learning feature representations that decorrelate the category from its context.
+</p>
+<h3>People</h3>
+
+<ul id="people" itemprop="accountablePerson">
+<li><a href="http://krsingh.cs.ucdavis.edu">Krishna Kumar Singh</a></li>
+<li><a href="https://scholar.google.com/citations?user=Gd9HQn2UsNoC&hl=en">Dhruv Mahajan</a></li>
+<li><a href="http://www.cs.utexas.edu/users/grauman/">Kristen Grauman</a></li>
+<li><a href="http://web.cs.ucdavis.edu/~yjlee/">Yong Jae Lee</a></li>
+<li><a href="https://scholar.google.com/citations?user=A-wA73gAAAAJ&hl=en">Matt Feiszli</a></li>
+<li><a href="https://scholar.google.com/citations?user=NyKCrmoAAAAJ&hl=en">Deepti Ghadiyaram</a></li>
+</ul>
+<h3>Abstract</h3>
+
+
+<p style="padding-left: 10px;	padding-right: 10px;">
+Existing models often leverage co-occurrences between
+objects and their context to improve recognition accuracy.
+However, strongly relying on context risks a model’s generalizability, especially when typical co-occurrence patterns
+are absent. This work focuses on addressing such contextual biases to improve the robustness of the learnt feature
+representations. Our goal is to accurately recognize a category in the absence of its context, without compromising
+on performance when it co-occurs with context. Our key
+idea is to decorrelate feature representations of a category
+from its co-occurring context. We achieve this by learning a
+feature subspace that explicitly represents categories occurring in the absence of context along side a joint feature subspace that represents both categories and context. Our very
+simple yet effective method is extensible to two multi-label
+tasks – object and attribute classification. On 4 challenging
+datasets, we demonstrate the effectiveness of our method in
+reducing contextual bias.
+</p>
+
+
+<h3>Paper</h3>
+<table><tbody><tr>
+  <td>
+  </td>
+  <td valign="middle">
+    <p style="text-align:left;margin-top:5px;">
+    <span style="font-size:12px">
+    </span></p>
+    <p>
+    </p>
+
+<p style="margin-top:10px;">
+
+</p><p style="text-align:left;"><span style="font-size:4px;">&nbsp;<br></span> Krishna Kumar Singh, Dhruv Mahajan, Kristen Grauman, Yong Jae Lee, Matt Feiszli, and Deepti Ghadiyaram <br><a href="https://arxiv.org/abs/2001.03152"><b>Don’t Judge an Object by Its Context: Learning to Overcome Contextual Bias</b></a> <br> In <i>CVPR 2020</i> (Oral Presentation)
+   <a href="javascript:togglevis('krishna16')" id="showbib">[Show BibTex]</a><br>
+  </p></td>
+</tr></tbody></table>
+      <table class="bibtex" style="display:none;margin-top:20px;" id="krishna16"><tbody><tr><td>
+          <pre>@inproceedings{singh-cvpr2020,
+  title = {Don’t Judge an Object by Its Context: Learning to Overcome Contextual Bias},
+  author = {Krishna Kumar Singh and Dhruv Mahajan and Kristen Grauman and Yong Jae Lee and Matt Feiszli and Deepti Ghadiyaram},
+  booktitle = {CVPR},
+  year = {2020}
+}
+          </pre>
+       <!--</div>-->
+       </td></tr></tbody></table>
+<p></p>
+
+
+<!--<h3 style="clear:both">Video</h3><br/><br/>
+  <iframe width="800" height="450" src="http://www.youtube.com/embed/s5-30NKSwo8?version=3&fs=1&feature=player_embedded&fs=1&hd=1&ap=%2526fmt%3D22" frameborder="1" allowfullscreen></iframe>
+</p>-->
+
+
+<h3>Additional Materials</h3>
+<p style="padding-left: 10px;	padding-right: 10px;">
+
+</p><ul>
+<li><a href="#"><b>Code (Coming Soon)</b></a></li>
+</ul>
+
+
+<h3>Approach</h3>
+<p style="padding-left: 10px;	padding-right: 10px;">
+<center>
+<img src="my_files/approach.png" itemprop="image" width="800" align="center" />
+</center>
+<p align="justify"> 
+<b>Our feature splitting approach: </b> where images and their associated category labels are provided as input. During training, we split the feature
+space into two equal sub spaces: Xo and Xs. If a training instance has a biased category occurring in the absence of context, we suppress Xs (no back-prop),
+forcing the model to leverage Xo. In all other scenarios, Xo and Xs are treated equally. At inference, the entire feature space is equally leveraged.
+</p>
+</p>
+
+<h3>Qualitative Results</h3>
+<p style="padding-left: 10px;	padding-right: 10px;">
+<center>
+<img src="my_files/standard_vs_cam.png" itemprop="image" width="800" />
+</center>
+<p align="justify"> 
+<b>Learning from the right thing:</b> ours-CAM (a) “remote” is
+contextually-biased by “person.” In the absence of “person,” ours-CAM
+focuses on the right pixel regions compared to standard. (b) “skateboard”
+co-occurs with “person.” standard wrongly focuses on “person” due to
+context bias, while ours-CAM rightly focuses on “skateboard.”
+</p>
+<br/>
+<br/>
+</p>
+<p style="padding-left: 10px;	padding-right: 10px;">
+<center>
+<img src="my_files/cam_vs_feat.png" itemprop="image" width="800" />
+</center>
+<p align="justify"> 
+<b>ours-CAM vs. ours-feature-split</b> on the images for which oursfeature-split is able to recognize where as ours-CAM fails. ours-CAM
+primarily focuses on the object and does not use context whereas oursfeature-split makes use of context for better prediction.
+</p>
+</p>
+<br/>
+<br/>
+<p style="padding-left: 10px;	padding-right: 10px;">
+<center>
+<img src="my_files/cam_vis.png" itemprop="image" width="600" />
+</center>
+<p align="justify"> 
+<b>Interpreting ours-feature-split</b> by visualizing CAMs with respect to Wo (left) and Ws (right). Wo has learnt to consistently focus on
+the actual category (e.g., car) while Ws captures context (e.g., road).
+</p>
+</p>
+
+
+
+
+
+<h3 style="clear:both">Acknowledgments</h3>
+<p align="justify">
+This work was supported in part by
+NSF CAREER IIS-1751206.
+</p>
+<p></p>
+<p align="justify">
+Comments, questions to <a href="mailto:krsingh@ucdavis.edu" target="_blank">Krishna Kumar Singh</a></p>
+</div>
+
+
+
+
+
+</body></html>
